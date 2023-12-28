@@ -1,0 +1,532 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash display";
+  src: url("../fonts/ClashDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Satoshi";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 145%;
+  color: #726E8D;
+  background-color: #FFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.nav {
+  width: 1352px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-menu__link {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  transition: opacity 0.7s;
+}
+
+.nav-menu__link:hover {
+  opacity: 0.5;
+}
+
+.cart {
+  background-image: url("../images/Shopping--cart.svg");
+}
+
+.auth {
+  background-image: url("../images/User--avatar.svg");
+}
+
+.header-menu {
+  width: 675px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu__link {
+  text-decoration: none;
+  color: #726E8D;
+  transition: opacity 0.7s;
+}
+
+.header-menu__link:hover {
+  opacity: 0.5;
+}
+
+.banner {
+  padding: 60px 0;
+}
+
+.banner-wrap {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.banner-text {
+  box-sizing: border-box;
+  width: 760px;
+  padding: 60px;
+  background-color: rgba(42, 37, 75, 1);
+}
+
+.banner-text__slogan {
+  font-family: "Clash display";
+  font-size: 32px;
+  color: #FFF;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+
+.banner-text__link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 56px;
+  padding-top: 15px;
+  background-color: rgba(249, 249, 249, 0.15);
+  text-align: center;
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+  transition: opacity 0.7s;
+}
+
+.banner-text__link:hover {
+  opacity: 0.5;
+}
+
+.banner-text__wrap {
+  margin-top: 196px;
+}
+
+.banner-text__content {
+  color: #FFF;
+  line-height: 150%;
+}
+
+.banner-image {
+  width: 520px;
+}
+
+.banner-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.features {
+  padding-bottom: 86px;
+}
+
+.features-wrap {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.features-title {
+  font-family: "Clash display";
+  font-size: 24px;
+  text-align: center;
+}
+
+.features-list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.features-list__item {
+  flex-grow:1;
+}
+
+.features-list__title {
+  font-family: "Clash display";
+  font-size: 20px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.features-list__title:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+}
+
+.delivery:before {
+  background-image: url("../images/Delivery.svg");
+}
+
+.checkmark:before {
+  background-image: url("../images/Checkmark--outline.svg");
+}
+
+.price:before {
+  background-image: url("../images/Purchase.svg");
+}
+
+.packaging:before {
+  background-image: url("../images/Sprout.svg");
+}
+
+.features-list__text {
+  font-size: 16px;
+}
+
+.new {
+  padding-bottom: 56px;
+}
+
+.new-wrap {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.new-title {
+  font-family: "Clash display";
+  font-size: 32px;
+  text-align: left;
+}
+
+.new-list {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-list__item {
+  width: 305px;
+  height: 462px;
+  text-align: left;
+}
+
+.new-list__img {
+  width: 305px;
+  height: 375px;
+}
+
+.new-list__img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.new-list__text {
+  margin-top: 24px;
+}
+
+.new-list__name {
+  font-family: "Clash display";
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.new-link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 56px;
+  margin-top: 35px;
+  padding-top: 15px;
+  background-color: #F9F9F9;
+  text-align: center;
+  font-size: 16px;
+  color: #2A254B;
+  text-decoration: none;
+  transition: color 0.7s;
+}
+
+.new-link:hover {
+  color: rgba(42, 37, 75, 0.6);
+}
+
+.popular {
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+
+.popular-wrap {
+  width: 1280px;
+  text-align: center;
+}
+
+.popular-title {
+  font-family: "Clash display";
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.popular-list {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-list__item {
+  width: 305px;
+  height: 462px;
+  text-align: left;  
+}
+
+.popular-list__item:first-child {
+  width: 630px;
+}
+
+.popular-list__img:first-child {
+  width: 100%;
+}
+
+.popular-list__img {
+  width: 100%;
+  height: 375px;
+}
+
+
+.popular-list__img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.popular-list__text {
+  margin-top: 24px;
+}
+
+.popular-list__name {
+  font-family: "Clash display";
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.popular-link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 56px;
+  margin-top: 35px;
+  padding-top: 15px;
+  background-color: #F9F9F9;
+  text-align: center;
+  font-size: 16px;
+  color: #2A254B;
+  text-decoration: none;
+  transition: color 0.7s;
+}
+
+.popular-link:hover {
+  color: rgba(42, 37, 75, 0.6);
+}
+
+.subscription {
+  background-color: #F9F9F9;
+  padding: 52px 0 65px;
+}
+
+.subscription-wrap {
+  width: 1273px;
+  margin: 0 auto;
+  padding: 68px 351px 54px;
+  background-color: #FFF;
+  text-align: center;
+}
+
+.subscription-text {
+  width: 582px;
+  margin: 0 auto;
+}
+
+.subscription-text__title {
+  font-family: "Clash display";
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.subscription-text__content {
+  font-size: 16px;
+  padding: 0 50px;
+}
+
+.subscription-form {
+  margin-top: 20px;
+}
+
+.subscription-input {
+  box-sizing: border-box;
+  width: 470px;
+  height: 56px;
+  border: none;
+  outline: none;
+  font-family: "Satoshi";
+  font-size: 16px;
+  color: rgba(42, 37, 75, 0.5);
+  background-color: #F9F9F9;
+  padding: 17px 32px;
+}
+
+.subscription-button {
+  width: 118px;
+  height: 56px;
+  background-color: #2A254B;
+  border: none;
+  font-family: "Satoshi";
+  font-size: 16px;
+  color: #FFF;
+  cursor: pointer;
+  transition: opacity 0.7s;
+}
+
+.subscription-button:hover {
+  opacity: 0.8;
+}
+
+.about-wrap {
+  display: flex;
+}
+
+.about-text {
+  width: 720px;
+  padding: 72px 100px 54px 84px;
+}
+
+.about-text__title {
+  font-family: "Clash display";
+  font-size: 24px; 
+  margin-bottom: 25px;
+  line-height: 140%;
+}
+
+.about-text__content {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.about-text__button {
+  width: 150px;
+  height: 56px;
+  background-color: #F9F9F9;
+  border: none;
+  font-family: "Satoshi";
+  font-size: 16px;
+  color: #2a254b;
+  cursor: pointer;
+  transition: color 0.7s;
+  margin-top: 196px;
+}
+
+.about-text__button:hover {
+  color: rgba(42, 37, 75, 0.6);
+}
+
+.about-img {
+  width: 720px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: #2A254B;
+}
+
+.footer-top {
+  width: 1259px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 58px;
+}
+
+.footer-menu__title, .footer-categories__title,
+.footer-company__title, .footer-subscription__title {
+  font-family: "Clash display";
+  font-size: 16px;
+  color: #FFF;
+}
+
+.footer-menu__item, .footer-categories__item, 
+.footer-company__item {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-menu__link, .footer-categories__link,
+.footer-company__link, .footer-subscription__link {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+  transition: opacity 0.7s;
+}
+
+.footer-menu__link:hover, .footer-categories__link:hover,
+.footer-company__link:hover, .footer-subscription__link:hover {
+  opacity: 0.5;
+}
+
+.footer-subscription__input {
+  width: 627px;
+  height: 56px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-family: "Satoshi";
+  font-size: 16px;
+  color: #FFF;
+}
