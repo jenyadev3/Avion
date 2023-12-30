@@ -11,9 +11,19 @@
 <body>
   <header class="header">
     <nav class="header-nav nav">
-      <label for="search">
-        <input class="nav-input" type="text" name="search" id="search">
-      </label>
+      <svg class="burger-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+        <path d="M14 3H2V4H14V3Z" fill="#2A254B"/>
+        <path d="M14 12H2V13H14V12Z" fill="#2A254B"/>
+        <path d="M14 6H2V7H14V6Z" fill="#2A254B"/>
+        <path d="M14 9H2V10H14V9Z" fill="#2A254B"/>
+      </svg>
+      <form class="nav-form">
+        <label for="search">
+          <button class="nav-button"><span class="visually-hidden">Search</span></button>
+          <input class="nav-input" type="text" name="search" id="search">
+        </label>
+      </form>
       <a class="nav-logo"><img src="./images/Avion.svg" alt="Logo"></a>
       <ul class="nav-menu">
         <li class="nav-menu__item">
@@ -155,6 +165,26 @@
             </div>
           </li>
         </ul>
+        <ul class="popular-list__mob">
+          <li class="popular-list__item">
+            <div class="popular-list__img">
+              <img src="./images/lamp.jpg" alt="Lucy lamp">
+            </div>
+            <div class="popular-list__text">
+              <p class="popular-list__name">The lucy lamp</p>
+              <p class="popular-list__price">£399</p>
+            </div>
+          </li>
+          <li class="popular-list__item">
+            <div class="popular-list__img">
+              <img src="./images/vases.jpg" alt="Rustiv vase set">
+            </div>
+            <div class="popular-list__text">
+              <p class="popular-list__name">Rustic vase set</p>
+              <p class="popular-list__price">£155</p>
+            </div>
+          </li>          
+        </ul>
         <a class="popular-link" href="#">View collection</a>
       </div>
     </section>
@@ -223,23 +253,26 @@
       </div>
       <div>
         <h2 class="footer-subscription__title">Join our mailing list</h2>
-        <label>
-          <input class="footer-subscription__input" placeholder="your@email.com">
-          <button>Sign up</button>
-        </label>
+        <form class="footer-subscription__form">
+          <label>
+            <input class="footer-subscription__input" placeholder="your@email.com">
+            <button class="footer-subscription__button">Sign up</button>
+          </label>
+      </form>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Copyright 2022 Avion LTD</p>
-      <ul>
-        <li><a href="#"><span>Linkedin</span></a></li>
-        <li><a href="#"><span>Facebook</span></a></li>
-        <li><a href="#"><span>Instagram</span></a></li>
-        <li><a href="#"><span>Skype</span></a></li>
-        <li><a href="#"><span>Twitter</span></a></li>
-        <li><a href="#"><span>Pinterest</span></a></li>
+      <p class="footer-copyright">Copyright 2022 Avion LTD</p>
+      <ul class="footer-bottom__list social-list">
+        <li class="social-list__item"><a class="social-list__link link" href="#"><span class="visually-hidden">Linkedin</span></a></li>
+        <li class="social-list__item"><a class="social-list__link fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-list__item"><a class="social-list__link inst" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-list__item"><a class="social-list__link skype" href="#"><span class="visually-hidden">Skype</span></a></li>
+        <li class="social-list__item"><a class="social-list__link tw" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social-list__item"><a class="social-list__link pin" href="#"><span class="visually-hidden">Pinterest</span></a></li>
       </ul>
     </div>
   </footer>
 </body>
+</div>
 </html>
