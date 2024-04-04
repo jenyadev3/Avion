@@ -663,22 +663,24 @@ img {
 
 .subscription-text {
   width: 100%;
-  margin: 0 auto;
 }
 
 .subscription-text__title {
   font-family: "Clash display";
   font-size: 36px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .subscription-text__content {
   font-size: 16px;
   padding: 0 50px;
+  text-align: center;
 }
 
 .subscription-form {
   width: 80.5%;
+  margin: 0 auto;
   margin-top: 70px;
 }
 
